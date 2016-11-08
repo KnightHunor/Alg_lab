@@ -1,6 +1,9 @@
-/* irjunk algoritmust, amely megkeresi es kiirja az elso n tokeletes szamot
- * egy szam tokeletes, ha egyenlo a nala kissebb osztoinak az osszegevel
+/* Nev: Laszlo Hunor
+ * Csoport: 611
+ * Azonosito: lzam0169
  */
+
+/* Irjunk algoritmust, amely megkeresi es kiirja az elso n tokeletes szamot */
 
 #include <stdio.h>
 
@@ -39,6 +42,12 @@ void print_tokeletes(int n)
 
 int main()
 {
-    print_tokeletes(4);
+    int n;
+
+    printf("n = ");
+    scanf("%d", &n);
+
+    print_tokeletes(n);
+    
     return (0);
 }
