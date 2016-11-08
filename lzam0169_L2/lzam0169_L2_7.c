@@ -24,8 +24,12 @@ void print2roman(int n)
 
 int main()
 {
+    unsigned n;
 
-    print2roman(2048);
+    printf("Enter number to convert: ");
+    scanf("%d", &n);
+
+    print2roman(n);
 
     return (0);
 }
