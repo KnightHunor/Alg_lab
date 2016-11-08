@@ -7,7 +7,6 @@
 
 
 #include <stdio.h>
-#include <string.h>
 
 int rsz(char c)
 {
