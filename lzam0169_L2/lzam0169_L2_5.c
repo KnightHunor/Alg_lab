@@ -1,6 +1,6 @@
 /* Nev: Laszlo Hunor
  * Csoport: 611
- * Azonoito: lzam0169
+ * Azonosito: lzam0169
  */
 
 /* Irjuk ki egy 60-as szamrendszerben megadott szamot 10-es szamrendszerbe */

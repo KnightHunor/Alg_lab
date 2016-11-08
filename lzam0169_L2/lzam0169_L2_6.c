@@ -1,6 +1,6 @@
 /* Nev: Laszlo Hunor
  * Csoport: 611
- * Azonosito: lzam0169_L2
+ * Azonosito: lzam0169
  */
 
 /* irjunk programot, amely atalakit egy romai szamot arab szamma */
@@ -25,10 +25,36 @@ int rsz(char c)
     return (0);
 }
 
-int rtoi(char *r);
+int rtoi(const char *r)
+{
+    int c1; /* first character */
+    int c2; /* next character */
+    int sum = 0;
+    while (*r)
+    {
+        c1 = rsz(*r);
+        c2 = rsz(*(r + 1));
+
+        if (c1 < c2)
+        {
+            sum += (c2 - c1);
+            r++;
+        }
+        else
+            sum += c1;
+        r++;
+    }
+
+    return (sum);
+}
 
 int main()
 {
     char r[20];
+    
+    printf("Adjon meg egy romai szamot: ");
+    scanf("%s", r);
+    printf("%d\n", rtoi(r));
 
+    return(0);
 }
